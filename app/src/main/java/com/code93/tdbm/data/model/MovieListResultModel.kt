@@ -1,18 +1,20 @@
 package com.code93.tdbm.data.model
 
+import com.google.gson.annotations.SerializedName
+
 data class MovieListResultModel(
-    val posterPath: String,
+    @SerializedName("poster_path") val posterPath: String,
     val adult: Boolean,
     val overview: String,
-    val releaseDate: String,
-    val genreIds: List<Int>,
+    @SerializedName("release_date") val releaseDate: String,
+    @SerializedName("genre_ids") val genreIds: List<Int>,
     val id: Int,
-    val originalTitle: String,
-    val originalLanguage: String,
+    @SerializedName("original_title") val originalTitle: String,
+    @SerializedName("original_language") val originalLanguage: String,
     val title: String,
-    val backdropPath: String?,
+    @SerializedName("backdrop_path") val backdropPath: String?,
     val popularity: Double,
-    val voteCount: Int,
+    @SerializedName("vote_count") val voteCount: Int,
     val video: Boolean,
-    val voteAverage: Boolean
+    @SerializedName("vote_average") val voteAverage: Double
 )

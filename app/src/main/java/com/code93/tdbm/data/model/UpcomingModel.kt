@@ -1,9 +1,11 @@
 package com.code93.tdbm.data.model
 
+import com.google.gson.annotations.SerializedName
+
 data class UpcomingModel(
-    val page: Int,
+    @SerializedName("page") val page: Int,
     val results: List<MovieListResultModel>,
     val dates: DatesModel,
-    val totalPages: String,
-    val totalResults: String,
+    @SerializedName("total_pages") val totalPages: String,
+    @SerializedName("total_results") val totalResults: String,
 )
