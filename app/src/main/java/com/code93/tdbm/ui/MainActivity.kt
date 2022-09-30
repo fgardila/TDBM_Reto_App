@@ -1,7 +1,8 @@
-package com.code93.tdbm
+package com.code93.tdbm.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.code93.tdbm.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
